@@ -34,6 +34,9 @@ public class ManejoArrayList {
         profesores2.add(prof1);
         profesores2.add(prof2);
         
+        System.out.println(profesores2.get(1).obtenerTipo());
+        
+        Profesor temporal = profesores2.get(0);
         for (int i = 0; i < profesores2.size(); i++) {
             System.out.printf("%s - %s\n", profesores2.get(i).obtenerNombre(),
                     profesores2.get(i).obtenerTipo());
@@ -42,7 +45,12 @@ public class ManejoArrayList {
         System.out.println("-----------------------------");
         
         Profesor prof3 = new Profesor("Melissa Gilbert", "contratado");
+        Profesor prof4 = new Profesor("Melissa J", "desconocido");
+        Profesor prof5 = new Profesor("Melissa M", "contratado");
+        
         profesores2.add(prof3);
+        profesores2.add(prof4);
+        profesores2.add(prof5);
         
         for (int i = 0; i < profesores2.size(); i++) {
             System.out.printf("%s - %s\n", profesores2.get(i).obtenerNombre(),
